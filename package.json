@@ -1,0 +1,23 @@
+{
+  "name": "sensors.africa-esp32-webserver-ui",
+  "version": "1.0.0",
+  "description": "Web server user interface development for ESP32 boards.",
+  "keywords": [
+    "ESP32"
+  ],
+  "homepage": "https://github.com/CodeForAfrica/sensors.AFRICA-ESP32-webserver-ui#readme",
+  "bugs": {
+    "url": "https://github.com/CodeForAfrica/sensors.AFRICA-ESP32-webserver-ui/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodeForAfrica/sensors.AFRICA-ESP32-webserver-ui.git"
+  },
+  "license": "Apache-2.0",
+  "author": "CFA",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  }
+}
