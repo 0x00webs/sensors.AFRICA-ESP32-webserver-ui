@@ -1,23 +1,41 @@
 {
-  "name": "sensors.africa-esp32-webserver-ui",
-  "version": "1.0.0",
-  "description": "Web server user interface development for ESP32 boards.",
-  "keywords": [
-    "ESP32"
-  ],
-  "homepage": "https://github.com/CodeForAfrica/sensors.AFRICA-ESP32-webserver-ui#readme",
+  "author": "CFA",
   "bugs": {
     "url": "https://github.com/CodeForAfrica/sensors.AFRICA-ESP32-webserver-ui/issues"
   },
+  "dependencies": {
+    "csso": "^5.0.5",
+    "express": "^5.2.1",
+    "glob": "^13.0.6",
+    "html-minifier-terser": "^7.2.0",
+    "imagemin": "^9.0.1",
+    "imagemin-mozjpeg": "^10.0.0",
+    "imagemin-pngquant": "^10.0.0",
+    "imagemin-svgo": "^12.0.0",
+    "multer": "^2.1.0",
+    "nodemon": "^3.1.14",
+    "purgecss": "^8.0.0",
+    "terser": "^5.46.0"
+  },
+  "description": "Web server user interface development for ESP32 boards.",
+  "homepage": "https://github.com/CodeForAfrica/sensors.AFRICA-ESP32-webserver-ui#readme",
+  "keywords": [
+    "ESP32"
+  ],
+  "license": "Apache-2.0",
+  "main": "index.js",
+  "name": "sensors.africa-esp32-webserver-ui",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/CodeForAfrica/sensors.AFRICA-ESP32-webserver-ui.git"
   },
-  "license": "Apache-2.0",
-  "author": "CFA",
-  "type": "commonjs",
-  "main": "index.js",
   "scripts": {
-    "test": "jest"
-  }
+    "build": "node build.js",
+    "dev": "nodemon --watch server/index.js --exec 'node server/index.js'",
+    "start": "node server.js",
+    "test": "jest",
+    "watch": "nodemon --exec 'npm run build'"
+  },
+  "type": "module",
+  "version": "1.0.0"
 }
