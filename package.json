@@ -7,7 +7,7 @@
     "csso": "^5.0.5",
     "express": "^5.2.1",
     "glob": "^13.0.6",
-    "html-minifier-terser": "^7.2.0",
+    "html-minifier-next": "^5.1.5",
     "imagemin": "^9.0.1",
     "imagemin-mozjpeg": "^10.0.0",
     "imagemin-pngquant": "^10.0.0",
@@ -15,6 +15,8 @@
     "multer": "^2.1.0",
     "nodemon": "^3.1.14",
     "purgecss": "^8.0.0",
+    "sharp": "^0.34.5",
+    "svgo": "^4.0.0",
     "terser": "^5.46.0"
   },
   "description": "Web server user interface development for ESP32 boards.",
@@ -31,7 +33,10 @@
   },
   "scripts": {
     "build": "node build.js",
+    "build:debug": "LOG_LEVEL=debug npm run build",
+    "clean:svgs": "svgcleaner src dist || echo 'svgcleaner not found'",
     "dev": "nodemon --watch server/index.js --exec 'node server/index.js'",
+    "optimize:svgs": "npx svgo -f src/icons -o dist/icons",
     "start": "node server.js",
     "test": "jest",
     "watch": "nodemon --exec 'npm run build'"
