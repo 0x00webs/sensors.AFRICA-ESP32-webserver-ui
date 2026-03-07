@@ -1,3 +1,0 @@
-2026-03-03T07:10:22Z payload_id=af-1001 reason=network_timeout
-2026-03-04T09:44:10Z payload_id=af-1002 reason=http_500
-2026-03-05T10:31:08Z payload_id=af-1003 reason=modem_reset
