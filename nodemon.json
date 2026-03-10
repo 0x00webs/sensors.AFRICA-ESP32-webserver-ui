@@ -5,8 +5,9 @@
 	"legacyWatch": false,
 	"watch": [
 		"src/**/*.html",
-		"src/style.css",
-		"src/scripts.js",
-		"src/icons/**/*"
-	]
+		"src/**/*.css",
+		"src/**/*.js",
+		"src/**/*.png",
+		"src/**/*.jpg",
+		"src/**/*.svg"]
 }
