@@ -36,6 +36,7 @@ jobs:
                   # Create a temporary directory with only dist contents
                   mkdir -p /tmp/build-contents
                   cp -r dist/* /tmp/build-contents/
+                  cp README.md /tmp/build-contents/
 
                   # Create or checkout build branch
                   git fetch origin
