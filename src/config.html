@@ -175,16 +175,14 @@
 							Power Options
 						</legend>
 
-						<div class="form-group">
-							<label class="flex-row" for="powerSaver">
-								<span>Enable Power Saver</span>
-								<input
-									type="checkbox"
-									id="powerSaver"
-									name="powerSaver" />
-							</label>
-						</div>
-
+                        <div class="form-group power-switch">
+                        <label class="toggle-switch">
+                            <input type="checkbox" id="powerSaver" name="powerSaver">
+                            <span class="toggle-track"></span>
+                            <span class="toggle-label">Toggle power-saving mode:</span>
+                            <span id="powerSaverStatus" class="status-text">Off</span>
+                        </label>
+                        </div>
 						<div class="step-btns">
 							<button
 								type="button"
