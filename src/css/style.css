@@ -113,6 +113,23 @@ body.nav-open {
 	margin: 1.5rem auto;
 }
 
+/* Footer */
+.site-footer {
+	width: 100%;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem 0;
+	background: var(--bg-secondary);
+	border-top: 1px solid var(--border-color);
+	margin-top: auto;
+}
+.site-footer small {
+	color: var(--text-muted);
+	font-size: 0.95rem;
+}
+
 /* Header */
 .site-header {
 	position: fixed;
@@ -195,6 +212,7 @@ body.nav-open {
 	border: 1px solid var(--border-color);
 	background: var(--bg-primary);
 }
+/* Hamburger menu icon lines */
 .nav-toggle > div,
 .nav-toggle > div::before,
 .nav-toggle > div::after {
@@ -205,6 +223,14 @@ body.nav-open {
 	background: currentColor;
 	border-radius: 99px;
 	transition: transform var(--transition);
+}
+
+@media (prefers-color-scheme: dark) {
+	.nav-toggle > div,
+	.nav-toggle > div::before,
+	.nav-toggle > div::after {
+		background: #fff;
+	}
 }
 .nav-toggle > div {
 	position: relative;
